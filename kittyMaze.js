@@ -1,4 +1,3 @@
-
 var canvas;
 var kitty;
 var context;
@@ -78,24 +77,25 @@ function moveKitty(e) {
     switch (e.keyCode) {
         
         case 38:   // arrow up key
-
+  	case 119: // up key
             newX = currRectX;
             newY = currRectY - 3;
             break;
         
         case 37: // arrow left key
-
+	case 97: // left key
             newX = currRectX - 3;
             newY = currRectY;
             break;
         
         case 40: // arrow down key
-
+	case 115: // down key
             newX = currRectX;
             newY = currRectY + 3;
             break;
         
         case 39: // arrow right key
+        case 100: // right key
             newX = currRectX + 3;
             newY = currRectY;
             break;
